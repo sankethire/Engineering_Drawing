@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.14">
+  <compound refid="functions_8h" kind="file"><name>functions.h</name>
+    <member refid="functions_8h_1abc21f2a5cc6a81e0c3d3ec2b4e4a44dc" kind="function"><name>form_edges</name></member>
+    <member refid="functions_8h_1a951a44ffa2f558995d1bb7d42a784645" kind="function"><name>edge_checker</name></member>
+    <member refid="functions_8h_1a38d18f7127b9daf7cf373bb7452c2f7e" kind="function"><name>faces_connect</name></member>
+    <member refid="functions_8h_1a95d9918ecf65d9150a4b65b19f26918b" kind="function"><name>calculate_distance_2D</name></member>
+    <member refid="functions_8h_1aa1c6b5780f30e4a1ce84762e5f5c671d" kind="function"><name>calculate_distance_3D</name></member>
+  </compound>
+  <compound refid="_projection_8h" kind="file"><name>Projection.h</name>
+    <member refid="_projection_8h_1a048ce6ee2ed761ab6ef638a31cca5a60" kind="function"><name>ortho_planeProj_3Dpoint</name></member>
+    <member refid="_projection_8h_1aada8ece47a739e3c4d1347667121bfcf" kind="function"><name>translating_3D_point</name></member>
+    <member refid="_projection_8h_1a04b7c323991fd2f75d2a0b814ea047bb" kind="function"><name>scaling_3D_point</name></member>
+    <member refid="_projection_8h_1aae3b735dfab1a1cd000f47f5f4630600" kind="function"><name>rotating_3D</name></member>
+  </compound>
+  <compound refid="reconstruction_8cpp" kind="file"><name>reconstruction.cpp</name>
+    <member refid="reconstruction_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+</doxygenindex>

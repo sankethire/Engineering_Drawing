@@ -1,0 +1,61 @@
+\hypertarget{_projection_8h}{}\section{Projection.\+h File Reference}
+\label{_projection_8h}\index{Projection.\+h@{Projection.\+h}}
+{\ttfamily \#include $<$math.\+h$>$}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int $\ast$ \mbox{\hyperlink{_projection_8h_a048ce6ee2ed761ab6ef638a31cca5a60}{ortho\+\_\+plane\+Proj\+\_\+3\+Dpoint}} (int x1, int y1, int z1, int plane\+\_\+id)
+\item 
+int $\ast$ \mbox{\hyperlink{_projection_8h_aada8ece47a739e3c4d1347667121bfcf}{translating\+\_\+3\+D\+\_\+point}} (int x1, int y1, int z1, int translating\+\_\+factor, int plane\+\_\+id)
+\item 
+int $\ast$ \mbox{\hyperlink{_projection_8h_a04b7c323991fd2f75d2a0b814ea047bb}{scaling\+\_\+3\+D\+\_\+point}} (int x1, int y1, int z1, int scaling\+\_\+factor)
+\item 
+int $\ast$ \mbox{\hyperlink{_projection_8h_aae3b735dfab1a1cd000f47f5f4630600}{rotating\+\_\+3D}} (int axis, int x1, int y1, int z1, int angle)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_projection_8h_a048ce6ee2ed761ab6ef638a31cca5a60}\label{_projection_8h_a048ce6ee2ed761ab6ef638a31cca5a60}} 
+\index{Projection.\+h@{Projection.\+h}!ortho\+\_\+plane\+Proj\+\_\+3\+Dpoint@{ortho\+\_\+plane\+Proj\+\_\+3\+Dpoint}}
+\index{ortho\+\_\+plane\+Proj\+\_\+3\+Dpoint@{ortho\+\_\+plane\+Proj\+\_\+3\+Dpoint}!Projection.\+h@{Projection.\+h}}
+\subsubsection{\texorpdfstring{ortho\+\_\+plane\+Proj\+\_\+3\+Dpoint()}{ortho\_planeProj\_3Dpoint()}}
+{\footnotesize\ttfamily int$\ast$ ortho\+\_\+plane\+Proj\+\_\+3\+Dpoint (\begin{DoxyParamCaption}\item[{int}]{x1,  }\item[{int}]{y1,  }\item[{int}]{z1,  }\item[{int}]{plane\+\_\+id }\end{DoxyParamCaption})}
+
+part of 3d to 2d ~\newline
+~\newline
+~\newline
+~\newline
+~\newline
+ plane\+\_\+id gives which orthogonal plane it it is .
+
+gives the point projected onto the plane in the form of array
+
+x-\/y plane
+
+y-\/z plane
+
+x-\/z plane \mbox{\Hypertarget{_projection_8h_aae3b735dfab1a1cd000f47f5f4630600}\label{_projection_8h_aae3b735dfab1a1cd000f47f5f4630600}} 
+\index{Projection.\+h@{Projection.\+h}!rotating\+\_\+3D@{rotating\+\_\+3D}}
+\index{rotating\+\_\+3D@{rotating\+\_\+3D}!Projection.\+h@{Projection.\+h}}
+\subsubsection{\texorpdfstring{rotating\+\_\+3\+D()}{rotating\_3D()}}
+{\footnotesize\ttfamily int$\ast$ rotating\+\_\+3D (\begin{DoxyParamCaption}\item[{int}]{axis,  }\item[{int}]{x1,  }\item[{int}]{y1,  }\item[{int}]{z1,  }\item[{int}]{angle }\end{DoxyParamCaption})}
+
+transformation after rotation of 3D \mbox{\Hypertarget{_projection_8h_a04b7c323991fd2f75d2a0b814ea047bb}\label{_projection_8h_a04b7c323991fd2f75d2a0b814ea047bb}} 
+\index{Projection.\+h@{Projection.\+h}!scaling\+\_\+3\+D\+\_\+point@{scaling\+\_\+3\+D\+\_\+point}}
+\index{scaling\+\_\+3\+D\+\_\+point@{scaling\+\_\+3\+D\+\_\+point}!Projection.\+h@{Projection.\+h}}
+\subsubsection{\texorpdfstring{scaling\+\_\+3\+D\+\_\+point()}{scaling\_3D\_point()}}
+{\footnotesize\ttfamily int$\ast$ scaling\+\_\+3\+D\+\_\+point (\begin{DoxyParamCaption}\item[{int}]{x1,  }\item[{int}]{y1,  }\item[{int}]{z1,  }\item[{int}]{scaling\+\_\+factor }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_projection_8h_aada8ece47a739e3c4d1347667121bfcf}\label{_projection_8h_aada8ece47a739e3c4d1347667121bfcf}} 
+\index{Projection.\+h@{Projection.\+h}!translating\+\_\+3\+D\+\_\+point@{translating\+\_\+3\+D\+\_\+point}}
+\index{translating\+\_\+3\+D\+\_\+point@{translating\+\_\+3\+D\+\_\+point}!Projection.\+h@{Projection.\+h}}
+\subsubsection{\texorpdfstring{translating\+\_\+3\+D\+\_\+point()}{translating\_3D\_point()}}
+{\footnotesize\ttfamily int$\ast$ translating\+\_\+3\+D\+\_\+point (\begin{DoxyParamCaption}\item[{int}]{x1,  }\item[{int}]{y1,  }\item[{int}]{z1,  }\item[{int}]{translating\+\_\+factor,  }\item[{int}]{plane\+\_\+id }\end{DoxyParamCaption})}
+
+here plane\+\_\+id is used for the point along which plane it is translating
+
+x-\/y plane
+
+y-\/z plane
+
+x-\/z plane 

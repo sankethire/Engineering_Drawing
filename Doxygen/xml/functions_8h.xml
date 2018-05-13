@@ -1,0 +1,218 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="functions_8h" kind="file" language="C++">
+    <compoundname>functions.h</compoundname>
+    <includes local="no">math.h</includes>
+    <includedby refid="reconstruction_8cpp" local="yes">reconstruction.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>math.h</label>
+      </node>
+      <node id="0">
+        <label>functions.h</label>
+        <link refid="functions_8h"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>functions.h</label>
+        <link refid="functions_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>reconstruction.cpp</label>
+        <link refid="reconstruction_8cpp"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="functions_8h_1abc21f2a5cc6a81e0c3d3ec2b4e4a44dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int form_edges</definition>
+        <argsstring>(int p1, int q1, int p2, int q2)</argsstring>
+        <name>form_edges</name>
+        <param>
+          <type>int</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>q1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>p2</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>q2</declname>
+        </param>
+        <briefdescription>
+<para>For one pair of co-ordinates. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>draw line in 2D </para>        </inbodydescription>
+        <location file="functions.h" line="5" column="1" bodyfile="functions.h" bodystart="5" bodyend="9"/>
+      </memberdef>
+      <memberdef kind="function" id="functions_8h_1a951a44ffa2f558995d1bb7d42a784645" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool edge_checker</definition>
+        <argsstring>(int p1, int q1, int p2, int q2)</argsstring>
+        <name>edge_checker</name>
+        <param>
+          <type>int</type>
+          <declname>p1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>q1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>p2</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>q2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>if (p1,q1) and (p2,q2) forms an edge then bool edge returns true otherwise returns false </para>        </inbodydescription>
+        <location file="functions.h" line="13" column="1" bodyfile="functions.h" bodystart="13" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="functions_8h_1a38d18f7127b9daf7cf373bb7452c2f7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool faces_connect</definition>
+        <argsstring>(int face1[][], int face2[][])</argsstring>
+        <name>faces_connect</name>
+        <param>
+          <type>int</type>
+          <declname>face1</declname>
+          <array>[][]</array>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>face2</declname>
+          <array>[][]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>part of 2D to 3D </para>        </inbodydescription>
+        <location file="functions.h" line="17" column="1" bodyfile="functions.h" bodystart="17" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="functions_8h_1a95d9918ecf65d9150a4b65b19f26918b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double calculate_distance_2D</definition>
+        <argsstring>(int x1, int y1, int x2, int y2)</argsstring>
+        <name>calculate_distance_2D</name>
+        <param>
+          <type>int</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x2</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Calculates distance between two points. </para>        </inbodydescription>
+        <location file="functions.h" line="21" column="1" bodyfile="functions.h" bodystart="21" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="functions_8h_1aa1c6b5780f30e4a1ce84762e5f5c671d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double calculate_distance_3D</definition>
+        <argsstring>(int x1, int y1, int z1, int x2, int y2, int z2)</argsstring>
+        <name>calculate_distance_3D</name>
+        <param>
+          <type>int</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>z1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x2</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y2</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>z2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="functions.h" line="25" column="1" bodyfile="functions.h" bodystart="25" bodyend="27"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include&lt;math.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="functions_8h_1abc21f2a5cc6a81e0c3d3ec2b4e4a44dc" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="functions_8h_1abc21f2a5cc6a81e0c3d3ec2b4e4a44dc" kindref="member">form_edges</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>p1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>q1<sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>p2<sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>q2){</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>line(p1,q1,p2,q2);</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="functions_8h_1a951a44ffa2f558995d1bb7d42a784645" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="functions_8h_1a951a44ffa2f558995d1bb7d42a784645" kindref="member">edge_checker</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>p1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>q1<sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>p2<sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>q2){</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="functions_8h_1a38d18f7127b9daf7cf373bb7452c2f7e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="functions_8h_1a38d18f7127b9daf7cf373bb7452c2f7e" kindref="member">faces_connect</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>face1[][]<sp/>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>face2[][]){</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="functions_8h_1a95d9918ecf65d9150a4b65b19f26918b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="functions_8h_1a95d9918ecf65d9150a4b65b19f26918b" kindref="member">calculate_distance_2D</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x1,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y1,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x2,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y2){</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sqrt(pow(x1-x2,2)<sp/>+<sp/>pow(y1-y2,2));</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="25" refid="functions_8h_1aa1c6b5780f30e4a1ce84762e5f5c671d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="functions_8h_1aa1c6b5780f30e4a1ce84762e5f5c671d" kindref="member">calculate_distance_3D</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x1,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y1,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>z1,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x2,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y2,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>z2){</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sqrt(pow(x1-x2,2)<sp/>+<sp/>pow(y1-y2,2)<sp/>+<sp/>pow(z1-z2,2));</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="functions.h"/>
+  </compounddef>
+</doxygen>

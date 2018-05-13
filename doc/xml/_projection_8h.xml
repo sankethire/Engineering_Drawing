@@ -1,0 +1,223 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="_projection_8h" kind="file" language="C++">
+    <compoundname>Projection.h</compoundname>
+    <includes local="no">math.h</includes>
+    <includedby refid="reconstruction_8cpp" local="yes">reconstruction.cpp</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>Projection.h</label>
+        <link refid="_projection_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>math.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="6">
+        <label>Projection.h</label>
+        <link refid="_projection_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>reconstruction.cpp</label>
+        <link refid="reconstruction_8cpp"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_projection_8h_1a048ce6ee2ed761ab6ef638a31cca5a60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int *</type>
+        <definition>int* ortho_planeProj_3Dpoint</definition>
+        <argsstring>(int x1, int y1, int z1, int plane_id)</argsstring>
+        <name>ortho_planeProj_3Dpoint</name>
+        <param>
+          <type>int</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>z1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>plane_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>part of 3d to 2d <linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+<linebreak/>
+ plane_id gives which orthogonal plane it it is .</para><para>gives the point projected onto the plane in the form of array</para><para>x-y plane</para><para>y-z plane</para><para>x-z plane </para>        </inbodydescription>
+        <location file="Projection.h" line="2" column="1" bodyfile="Projection.h" bodystart="2" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="_projection_8h_1aada8ece47a739e3c4d1347667121bfcf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int *</type>
+        <definition>int* translating_3D_point</definition>
+        <argsstring>(int x1, int y1, int z1, int translating_factor, int plane_id)</argsstring>
+        <name>translating_3D_point</name>
+        <param>
+          <type>int</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>z1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>translating_factor</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>plane_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>here plane_id is used for the point along which plane it is translating</para><para>x-y plane</para><para>y-z plane</para><para>x-z plane </para>        </inbodydescription>
+        <location file="Projection.h" line="24" column="1" bodyfile="Projection.h" bodystart="24" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="_projection_8h_1a04b7c323991fd2f75d2a0b814ea047bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int *</type>
+        <definition>int* scaling_3D_point</definition>
+        <argsstring>(int x1, int y1, int z1, int scaling_factor)</argsstring>
+        <name>scaling_3D_point</name>
+        <param>
+          <type>int</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>z1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>scaling_factor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Projection.h" line="48" column="1" bodyfile="Projection.h" bodystart="48" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="_projection_8h_1aae3b735dfab1a1cd000f47f5f4630600" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int *</type>
+        <definition>int* rotating_3D</definition>
+        <argsstring>(int axis, int x1, int y1, int z1, int angle)</argsstring>
+        <name>rotating_3D</name>
+        <param>
+          <type>int</type>
+          <declname>axis</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>z1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>angle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>transformation after rotation of 3D </para>        </inbodydescription>
+        <location file="Projection.h" line="55" column="1" bodyfile="Projection.h" bodystart="55" bodyend="57"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include&lt;math.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2" refid="_projection_8h_1a048ce6ee2ed761ab6ef638a31cca5a60" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*<ref refid="_projection_8h_1a048ce6ee2ed761ab6ef638a31cca5a60" kindref="member">ortho_planeProj_3Dpoint</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x1,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y1,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>z1,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>plane_id){</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>p[2];<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(plane_id<sp/>==<sp/>1)<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p[1]<sp/>=<sp/>x1;<sp/></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p[2]<sp/>=<sp/>y1;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(plane_id<sp/>==<sp/>2)<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p[1]<sp/>=<sp/>y1;<sp/></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p[2]<sp/>=<sp/>z1;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(plane_id<sp/>==<sp/>3)<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p[1]<sp/>=<sp/>x1;<sp/></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p[2]<sp/>=<sp/>z1;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>p;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="_projection_8h_1aada8ece47a739e3c4d1347667121bfcf" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*<ref refid="_projection_8h_1aada8ece47a739e3c4d1347667121bfcf" kindref="member">translating_3D_point</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x1,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y1,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>z1,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>translating_factor,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>plane_id){</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>p[3];</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(plane_id<sp/>==<sp/>1)<sp/></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p[1]<sp/>=<sp/>x1<sp/>+<sp/>translating_factor;<sp/></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p[2]<sp/>=<sp/>y1<sp/>+<sp/>translating_factor;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p[3]<sp/>=<sp/>z1;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(plane_id<sp/>==<sp/>2)<sp/></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p[1]<sp/>=<sp/>x1;<sp/></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p[2]<sp/>=<sp/>y1<sp/>+<sp/>translating_factor;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p[3]<sp/>=<sp/>z1<sp/>+<sp/>translating_factor;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(plane_id<sp/>==<sp/>3)<sp/></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p[1]<sp/>=<sp/>x1<sp/>+<sp/>translating_factor;<sp/></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p[2]<sp/>=<sp/>y1;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p[3]<sp/>=<sp/>z1<sp/>+<sp/>translating_factor;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>p;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="_projection_8h_1a04b7c323991fd2f75d2a0b814ea047bb" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*<ref refid="_projection_8h_1a04b7c323991fd2f75d2a0b814ea047bb" kindref="member">scaling_3D_point</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x1,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y1,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>z1,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>scaling_factor){</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>p[3];</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>p[1]<sp/>=<sp/>x1<sp/>*<sp/>scaling_factor;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>p[2]<sp/>=<sp/>y1<sp/>*<sp/>scaling_factor;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>p[3]<sp/>=<sp/>z1<sp/>*<sp/>scaling_factor;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="_projection_8h_1aae3b735dfab1a1cd000f47f5f4630600" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*<ref refid="_projection_8h_1aae3b735dfab1a1cd000f47f5f4630600" kindref="member">rotating_3D</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>axis,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>z1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>angle){</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">}<sp/></highlight></codeline>
+    </programlisting>
+    <location file="Projection.h"/>
+  </compounddef>
+</doxygen>
